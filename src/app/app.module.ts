@@ -17,9 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     MyApp,
     HomePage,
-    
-
-    
+    RegisterPage,
+    LoginPage
     
   ],
   imports: [
@@ -31,6 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
   entryComponents: [
     MyApp,
     HomePage,
+    LoginPage,
+    RegisterPage
     
         
   ],

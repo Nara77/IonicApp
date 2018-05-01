@@ -15,6 +15,31 @@
 
 
 <ion-content padding>
+
+    <ion-list>
+
+        <ion-item>
+          <ion-label fixed>FirstName</ion-label>
+          <ion-input type="user.firstName" value=""></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label fixed>LastName</ion-label>
+          <ion-input type="user.lastName"></ion-input>
+        </ion-item>
+
+        <ion-item>
+        <ion-label fixed>Email</ion-label>
+          <ion-input type="user.email" value=""></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label fixed>Password</ion-label>
+          <ion-input type="user.password"></ion-input>
+        </ion-item>
+      
+      </ion-list>
+
     <button clear ionbutton (click)="user.Register()">Button</button>
 
 </ion-content>

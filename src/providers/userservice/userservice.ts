@@ -17,6 +17,12 @@ export class UserserviceProvider {
   email: "Test@gmail.com",
    password: "Test"
 }
+
+
+userA ={
+  email: "Test@gmail.com",
+   password: "Test"
+}
   
 results: any;
 
@@ -35,6 +41,20 @@ results: any;
     });
     console.log(this.user);
   }
+
+
+
+  Login() {
+    this.http.post("http://localhost:3000/api/IonicUsers/login", this.userA)
+
+    .subscribe(results => {
+      this.results = results;
+      console.log(this.results)
+    });
+    console.log(this.userA);
+  }
+
+
 
 }
 

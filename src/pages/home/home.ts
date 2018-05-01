@@ -13,35 +13,40 @@ export class HomePage {
 
 
   text:string;
+  locale:string = this.locale;
+  rate:number = this.rate;
 
   constructor(public navCtrl: NavController, private tts: TextToSpeech) {
-    //this.goToOtherPage()
+   // this.goToOtherPage()
   } 
    
    sayText() {
-         this.tts.speak(this.text)
+         this.tts.speak({text:'GoodMorning',
+         locale: 'en-US',
+         rate:1})
          .then(() => console.log("Success" + this.text))
           .catch((reason: any) => console.log(reason));
         
         
        }
-  // ionViewDidLoad() {
+  //  ionViewDidLoad() {
   //   console.log("Run")
   //   this.goToOtherPage()
 
-  }
+  // }
 
 
+  // document;addEventListener('deviceready', function () {
+  //   // basic usage
+  //   this.tts
+  //       .speak('hello, world!').then(function () {
+  //           alert('success');
+  //       }, function (reason) {
+  //           alert(reason);
+  //       });
 
-      // goToOtherPage() {
-       // push another page onto the history stack
-        //causing the nav controller to animate the new page in
-        //this.navCtrl.push(LoginPage);
-      // }
-      
-      //}
+     
+    
  
- 
-
-
-
+  //     }
+    }
